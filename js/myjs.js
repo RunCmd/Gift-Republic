@@ -1,11 +1,11 @@
 // Author:Daniel Neshkoski
 
 $(document).ready(function(){
-	$(".dropdown-large").on("click",function(e){
+	$(".dropdown-large").hover(function(e){
 		$('.drop-caret').toggle();
 	});
 });
 
-$(document).on("click", function () {
+$(document).hover(function () {
     $(".drop-caret").hide();
 });
