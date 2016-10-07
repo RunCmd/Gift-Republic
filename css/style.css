@@ -131,6 +131,8 @@ a:focus, a:visited, a:active{background-color:transparent!important;}
 .background-about{background-image:url("../images/fetaured-products/reg-block.png");background-repeat:no-repeat;background-size:cover;}
 .background-about h1{margin:15px auto;color:#066d5b;font-family: 'Gothic-bold';font-size:64.93px;text-transform:uppercase;    padding: 63.4px 40px;
     text-align: center;}
+.background-about a:hover{color:#066d5b;text-decoration:none;background-color:transparent;color:#066d5b;}
+.background-about a {color:#066d5b;}
 .pad-top{padding-right:0px;}
 .vertical-double-copy{padding-top: 15px;width:100%!important;}
 /* ======================== */
@@ -155,7 +157,26 @@ a:focus, a:visited, a:active{background-color:transparent!important;}
 /*******************************/
 
 
-
+@media (min-width: 320px) and (max-width:768px){
+.social-nav{top:0px;right:0px;width: 100%;
+    text-align: center; padding:0px;}
+.search-icon input{width:120px;}
+.logo .main-logo{left:0px;}
+.wrap-header{padding: 10px 0px 15px;}
+.images-all{margin:auto;text-align:center;}
+.images-all img{max-width:100%;width: 360px;}
+.background-about h1{font-size:30px;}
+#horizontal-bg, #horizontal-bg-second{width: 360px;padding-bottom:15px;min-height:auto;}
+.pad-top{padding-right:15px;}
+#gift-glass{padding-bottom:15px;}
+.foot-nav{
+  margin:25px 0px;
+  text-align: center;
+  padding: 0;}
+  .foot-nav li{padding:5px 0px;}
+  .nav-copyrights li{padding-right:0px;}
+  .nav-copyrights li a{padding:5px 2px;}
+}
 @media (max-width: 768px) {
   .dropdown-menu-large {
     margin-left: 0 ;
@@ -170,4 +191,28 @@ a:focus, a:visited, a:active{background-color:transparent!important;}
   .dropdown-menu-large .dropdown-header {
     padding: 3px 15px !important;
   }
+  /* Top Header*/
+  /*.form-search{position:relative;top:170px;right:110px;}*/
+}
+@media (min-width: 768px) and (max-width:992px){
+/* Navigation Mobile- Laptop*/
+.main-navigation .navbar-nav>li>a{letter-spacing:0px;}
+.push-left-second{left:auto;}
+.push-left-first{left:1.5%;}
+/*Customize Images */
+.vertical-double-copy{min-height:225px;}
+.images-all img {width:175px;}
+.background-about h1{font-size:39px;}
+#horizontal-bg{min-height: 190px;
+    width: 362px}
+#horizontal-bg-second{min-height:auto;}
+.images-all .vertical-double{min-height:368px;}
+}
+@media (min-width: 992px) and (max-width:1200px){
+  .push-left-first{left:7.2%;}
+  /*  Customize Images */
+  .vertical-double-copy{min-height:282px;}
+  .images-all img{width:230px;}
+  #horizontal-bg{width:472px; min-height:375px;} 
+  #horizontal-bg-second{min-height:376px;}
 }

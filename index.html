@@ -25,7 +25,7 @@
         <div class="container">
           <div class="logo">
             <img src="images/GR_LOGO-copy.png" alt="Logo" class="main-logo">
-             <form action="" class="form-search">
+             <form action="" class="form-search hidden-xs">
                 <div class="search-icon">
                   <input type="text" name="searchbar" placeholder="Search"><i class="fa fa-search search-me" aria-hidden="true"></i>
                 </div>
@@ -43,20 +43,18 @@
       <div class="container">
       <nav class="navbar">
         <div class="navbar-header">
-        <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+        <button class="navbar-toggle pull-left" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
           <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
+          <i class="fa fa-list" aria-hidden="true"></i>
         </button>
       </div>
        <div class="collapse navbar-collapse js-navbar-collapse">
         <ul class="nav navbar-nav">
-          <li class="dropdown dropdown-large">
+          <li class="dropdown dropdown-large drop-hover">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Products <b class="caret drop-caret"></b></a>
             
             <ul class="dropdown-menu dropdown-menu-large row">
-              <li class="col-sm-3 push-left-first">
+              <li class="col-md-3 col-sm-3 push-left-first">
                 <ul>
                   <li><a href="#">New</a></li>
                   <li><a href="#">Bathroom</a></li>
@@ -64,7 +62,7 @@
                   <li><a href="#">Fun Stuff</a></li>
                 </ul>
               </li>
-              <li class="col-sm-2 push-left-second">
+              <li class="col-md-3 col-sm-3 push-left-second">
                 <ul>
                   <li><a href="#">Games Room</a></li>
                   <li><a href="#">Gift Sets</a></li>
@@ -72,7 +70,7 @@
                   <li><a href="#">Living</a></li>
                 </ul>
               </li>
-              <li class="col-sm-3">
+              <li class="col-md-3 col-sm-3">
                 <ul>
                   <li><a href="#">Mugs</a></li>
                   <li><a href="#">Outdoor</a></li>
@@ -80,7 +78,7 @@
                   <li><a href="#">Stationary</a></li>
                 </ul>
               </li>
-              <li class="col-sm-2 col-md-pull-1">
+              <li class="col-md-2  col-sm-3 col-md-pull-1">
                 <ul>
                   <li><a href="#">Tech</a></li>
                   <li><a href="#">Trivia</a></li>
@@ -106,7 +104,7 @@
       </div><!-- /.nav-collapse -->
     </nav>
     <!--CAROUSEL IMAGES banner -->
-    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+    <div id="carousel-example-generic" class="carousel slide hidden-xs" data-ride="carousel">
       <!-- Indicators -->
       <ol class="carousel-indicators">
         <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -122,6 +120,9 @@
         <div class="item">
            <img src="images/background-main.png" alt="banner" width="100%">
         </div>
+         <div class="item">
+           <img src="images/background-main.png" alt="banner" width="100%">
+        </div>
       </div>
     </div>
     <!--end./ Carousel -->
@@ -132,28 +133,28 @@
     <section class="images-all">
       <div class="container">
         <div class="row">
-          <div class="col-md-3">
+          <div class="col-md-3 col-xs-12 col-sm-3">
             <img src="images/fetaured-products/single_box1.png" alt="gifts for him">
              <img src="images/fetaured-products/horizontal_double.png" alt="gifts for him" width="555px" id="horizontal-bg">
           </div>
-          <div class="col-md-3">
-            <img src="images/fetaured-products/single_box2.png" alt="gifts for him">
+          <div class="col-md-3 col-sm-3 col-xs-12">
+            <img src="images/fetaured-products/single_box2.png" alt="gifts for him" id="gift-glass">
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <img src="images/fetaured-products/single_box3.png" alt="gifts for him">
              <img src="images/fetaured-products/single_box4.png" alt="gifts for him" id="horizontal-bg-second">
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-3 col-xs-12">
             <img src="images/fetaured-products/vertical_double.png" alt="gifts for him" class="vertical-double">
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4 pad-top">
+          <div class="col-md-4 col-sm-4 pad-top">
             <div class="background-about">
-              <h1>About Us</h1>
+              <h1><a href="">About Us</a></h1>
             </div>
           </div>
-          <div class="col-md-8">
+          <div class="col-md-8 col-sm-8 hidden-xs">
             <img src="images/fetaured-products/horizontal_double-copy.png" alt="gifts for him" class="vertical-double-copy">
           </div>
         </div>

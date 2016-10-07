@@ -1,7 +1,7 @@
 // Author:Daniel Neshkoski
 
 $(document).ready(function(){
-	$(".dropdown-large").hover(function(e){
+	$(".drop-hover").hover(function(e){
 		$('.drop-caret').toggle();
 	});
 });
