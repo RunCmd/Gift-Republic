@@ -91,7 +91,7 @@
                   <li><a href="#">Living</a></li>
                 </ul>
               </li>
-              <li class="col-md-3 col-sm-3">
+              <li class="col-md-4 col-sm-3">
                 <ul>
                   <li><a href="#">Mugs</a></li>
                   <li><a href="#">Outdoor</a></li>
@@ -164,15 +164,23 @@
       <div class="container">
         <div class="row">
           <div class="col-md-3 col-xs-12 col-sm-3">
-            <img src="images/fetaured-products/single_box1.png" alt="gifts for him">
-             <img src="images/fetaured-products/horizontal_double.png" alt="gifts for him" width="555px" id="horizontal-bg">
+            <div class="banner-load">
+              <!-- <img src="images/fetaured-products/single_box1.png" alt="gifts for him"> -->
+            </div>
+            <div class="banner-load-big">
+           <!--   <img src="images/fetaured-products/horizontal_double.png" alt="gifts for him" width="555px" id="horizontal-bg"> -->
+           </div>
+          </div>
+          <div class="col-md-3 col-sm-3 col-xs-12 banner-load_two">
+            <!-- <img src="images/fetaured-products/single_box2.png" alt="gifts for him" id="gift-glass" class="random"> -->
           </div>
           <div class="col-md-3 col-sm-3 col-xs-12">
-            <img src="images/fetaured-products/single_box2.png" alt="gifts for him" id="gift-glass">
+            <div class="banner-load_three">
+            <!-- <img src="images/fetaured-products/single_box3.png" alt="gifts for him"> -->
           </div>
-          <div class="col-md-3 col-sm-3 col-xs-12">
-            <img src="images/fetaured-products/single_box3.png" alt="gifts for him">
-             <img src="images/fetaured-products/single_box4.png" alt="gifts for him" id="horizontal-bg-second">
+            <div class="banner-load-sec">
+             <!-- <img src="images/fetaured-products/single_box4.png" alt="gifts for him" id="horizontal-bg-second"> -->
+           </div>
           </div>
           <div class="col-md-3 col-sm-3 col-xs-12">
             <img src="images/fetaured-products/vertical_double.png" alt="gifts for him" class="vertical-double">
@@ -233,5 +241,17 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     <script src="js/myjs.js"></script>
+    <script>
+//Added Images with localpath;
+    var images = ['fetaured-products/single_box1.png', 'fetaured-products/single_box2.png', 'fetaured-products/single_box3.png', 'fetaured-products/single_box4.png'];
+    var imagesBig = ['background-main.png', 'fetaured-products/horizontal_double.png'];
+    
+//Make Random Images Change (())
+    $('<img class="fade-in" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('.banner-load');
+    $('<img class="fade-in" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('.banner-load_two');
+     $('<img class="fade-in" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('.banner-load_three');
+     $('<img class="fade-in" id="horizontal-bg" src="images/' + imagesBig[Math.floor(Math.random() * imagesBig.length)] + '">').appendTo('.banner-load-big');
+     $('<img class="fade-in" id="horizontal-bg-second" src="images/' + images[Math.floor(Math.random() * images.length)] + '">').appendTo('.banner-load-sec');
+</script>
   </body>
 </html>
