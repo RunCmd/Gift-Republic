@@ -27,11 +27,11 @@ background-color:none;
 a:focus, a:visited, a:active{background-color:transparent!important;}
 a{color:black;}
 /* HEADER WRAP/ LOGO SEARCH BAR  */
-.wrap-header{width:100%;max-width:100%;padding:20px 0px 45px;}
+.wrap-header{width:100%;max-width:100%;padding:20px 0px 20px;}
 .wrap-header .logo{margin:auto;width:100%;text-align:center;}
 .form-search{float:right;}
 .logo .main-logo{position: relative;left: 150px;}
-.search-icon{position:relative;float:left;right:10px;}
+.search-icon{position:relative;float:left;right:20px;}
 .add-to-cart{float:left}
 .add-to-cart img{position: relative;right: 5px;}
 .add-to-cart a{color:black;}
@@ -123,7 +123,7 @@ a{color:black;}
 /* =========================== */
 
 /* SECTION IMAGES/ALL */
-.images-all{padding:20px 0px 0px;}
+.images-all{padding:15px 0px 0px;}
 .images-all img{ width: 280px;}
 #horizontal-bg{min-height:328px;width: 572px;padding-top: 15px;}
 #horizontal-bg-second{ padding-top: 15px;min-height: 328px;}
@@ -140,11 +140,11 @@ a{color:black;}
 /* FOOTER SECTION */
 .main-footer{background-color:#a7e6d9;border-top:1px solid black;}
 .foot-nav {margin: 30px 40px;}
-.foot-nav a{text-transform:uppercase;padding:20px 0px;color:#000;font-size:12px;font-family:'Gothic-bold';}
-.foot-nav li{padding:2px 0px;}
+.foot-nav a{text-transform:uppercase;padding:5px 0px;color:#000;font-size:12px;font-family:'Gothic-bold';}
+.foot-nav li{padding:5px 0px;}
 .main-footer ul {list-style:none;}
 
-.social-nav{float:right; position: relative;top: 88px;right: 90px;}
+.social-nav{float:right; position: relative;top: 100px;right: 90px;}
 .social-nav li{padding:5px 10px;display:inline-block;}
 .nav-copyrights{padding-bottom: 10px;}
 .nav-copyrights li{display:inline-block;    padding-right: 13px;}
@@ -193,6 +193,9 @@ a{color:black;}
   }
   /* Top Header*/
   /*.form-search{position:relative;top:170px;right:110px;}*/
+.dropdown-menu-large{position:relative;background-color:transparent;border:0;box-shadow:none;}
+.main-navigation .navbar .navbar-collapse{text-align:left;}
+.push-left-first{left:0;}
 }
 @media (min-width: 768px) and (max-width:992px){
 /* Navigation Mobile- Laptop*/
