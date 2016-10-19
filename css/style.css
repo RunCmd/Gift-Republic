@@ -174,11 +174,11 @@ li.drop-hover:hover{min-height: 33px;}
   opacity:0.5;
   -webkit-transition: .3s ease-in-out;
   transition: .3s ease-in-out;cursor:pointer;}
-#horizontal-bg{min-height:328px;width: 572px;padding-top: 15px;}
-#horizontal-bg-second{ padding-top: 15px;min-height: 328px;}
-.images-all .vertical-double{min-height:609px;max-width: 100%;}
+#horizontal-bg{ height: 281px;min-height: 281px;width: 572px;padding-top: 15px;}
+#horizontal-bg-second{ padding-top: 15px; min-height: 281px;height: 281px;}
+.images-all .vertical-double{min-height:562px;max-width: 100%;}
 .background-about{background-image:url("../images/fetaured-products/reg-block.png");background-repeat:no-repeat;background-size:cover;}
-.background-about h1{margin:15px auto;color:#066d5b;font-family: 'Gothic-bold';font-size:64.93px;text-transform:uppercase;    padding: 63.4px 40px;
+.background-about h1{margin:15px auto;color:#066d5b;font-family: 'Gothic-bold';font-size:64.93px;text-transform:uppercase;    padding: 63.93px 40px;
     text-align: center;}
 .background-about a:hover{color:#066d5b;text-decoration:none;background-color:transparent;color:#066d5b;}
 .background-about a {color:#066d5b;}
@@ -293,6 +293,7 @@ li.drop-hover:hover{min-height: 33px;}
   .padd-products .col-md-3 {margin-bottom:35px;}
 }
 @media (max-width: 768px) {
+  .background-about{min-height:100%;}
   .dropdown-menu-large > li > ul > li{padding:1px 1px;}
   .main-navigation .navbar-header{
     width: 100%;
@@ -330,6 +331,7 @@ li.drop-hover:hover{min-height: 33px;}
 .push-left-first{left:0;}
 }
 @media (min-width: 768px) and (max-width:992px){
+  .background-about{min-height:100%;}
 /* Navigation Mobile- Laptop*/
 .main-navigation .navbar-nav>li>a{letter-spacing:0px;}
 .push-left-second{left:auto;}
@@ -339,12 +341,13 @@ li.drop-hover:hover{min-height: 33px;}
 .images-all img {width:175px;}
 .background-about h1{font-size:39px;}
 #horizontal-bg{min-height: 190px;
-    width: 362px}
-#horizontal-bg-second{min-height:auto;}
+    width: 362px;    height: auto;}
+#horizontal-bg-second{min-height:auto;height:auto;}
 .images-all .vertical-double{min-height:368px;}
 .social-nav{bottom: 77px;right: 90px;top:auto;}
 }
 @media (min-width: 992px) and (max-width:1200px){
+  .images-all .vertical-double{min-height:606px;}
   .push-left-first{left:7.2%;}
   /*  Customize Images */
   .vertical-double-copy{min-height:284px;}
@@ -353,9 +356,10 @@ li.drop-hover:hover{min-height: 33px;}
   #horizontal-bg-second{min-height:376px;}
 }
 
-@media (min-width:1200px) and (max-width:2200px){
-  .vertical-double-copy{height:284px;}
+@media (min-width:1200px) and (max-width:1920px){
+  .vertical-double-copy{height:285px;}
 }
-@media (min-width:2200px){
-  .vertical-double-copy{height:280px;}
+@media (min-width:1920px){
+  .vertical-double-copy{height:282px;}
 }
+
