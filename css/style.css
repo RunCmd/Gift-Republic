@@ -190,7 +190,22 @@ li.drop-hover:hover{min-height: 33px;}
 .pad-top{padding-right:0px;}
 .vertical-double-copy{padding-top: 15px;width:100%!important;}
 /* ======================== */
-
+/*====== CAROUSEL ==================== */
+.overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    pointer-events: none;
+    background: url(../images/overlay-image.png)#000;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    opacity: 0.5;
+  }
+/* ====================================== */
 /* PRODUCT LIST SECTION  */
 .product-list, .product-list-item{padding: 0px 0px;}
 .product-link p{letter-spacing: 2px;font-weight: bold;color:#9b9d9d;font-size:17px;font-family:"Gothic-italic-bold";    word-spacing: 10px;}
@@ -337,3 +352,6 @@ li.drop-hover:hover{min-height: 33px;}
   #horizontal-bg{width:472px; min-height:375px;} 
   #horizontal-bg-second{min-height:376px;}
 }
+
+
+
