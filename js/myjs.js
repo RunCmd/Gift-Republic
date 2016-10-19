@@ -21,7 +21,7 @@ $(document).ready(function(){
 	//Product Image replace
 	$('.show-product img').hover(function() {
     	var url = $(this).attr('src');
-    	$('#main-image').attr('src', url).css("width", "355px");
+    	$('#main-image').attr('src', url).css("width", "555px");
 	});
 //To TOP LINK default 
 		$('#top-page').hide();
