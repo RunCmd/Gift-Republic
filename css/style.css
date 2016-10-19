@@ -60,12 +60,13 @@ a{color:black;}
 .search-icon input{width:200px;max-width:100%;text-align:right;border-radius:0;border:1px solid #9e9e9e;}
 .login-register{padding-left:20px;}
 /* Sticky Header*/
-.sticky{position:fixed;width:100%;left:0;right:0;top:0;z-index:99;padding:10px 0px;transition: all 0.6s ease;}
+.sticky{    opacity: 0.9;position:fixed;width:100%;left:0;right:0;top:0;z-index:99;padding:10px 0px;transition: all 0.6s ease;}
 .sticky-logo{    position: fixed;
     left: 10px;
     top: 0;
     z-index: 999;
     width: 125px;transition: all 0.2s ease;}
+    .logo-main-sticky{display:none;}
 /*========================= */
 /* Drop DOWN SECTION with NAVIGATION */
 .main-navigation .navbar .navbar-nav {
@@ -259,7 +260,8 @@ li.drop-hover:hover{min-height: 33px;}
   background-color:transparent;border-bottom:2px solid black;}
 .to-top{position:absolute;right:20px;}
 .to-top span{cursor:pointer;}
-.to-top span i{font-size: 2.5em;}
+.to-top span i{font-size: 2.9em;}
+.to-top span i:hover{color:#a7e6d9;}
 /*******************************/
 
 
@@ -332,7 +334,7 @@ li.drop-hover:hover{min-height: 33px;}
 .push-left-second{left:auto;}
 .push-left-first{left:1.5%;}
 /*Customize Images */
-.vertical-double-copy{min-height:224px;}
+.vertical-double-copy{min-height:227px;}
 .images-all img {width:175px;}
 .background-about h1{font-size:39px;}
 #horizontal-bg{min-height: 190px;
@@ -344,13 +346,13 @@ li.drop-hover:hover{min-height: 33px;}
 @media (min-width: 992px) and (max-width:1200px){
   .push-left-first{left:7.2%;}
   /*  Customize Images */
-  .vertical-double-copy{min-height:281px;}
+  .vertical-double-copy{min-height:284px;}
   .images-all img{width:230px;}
   #horizontal-bg{width:472px; min-height:375px;} 
   #horizontal-bg-second{min-height:376px;}
 }
 
 @media (min-width:1200px){
-  .vertical-double-copy{height:279px;}
+  .vertical-double-copy{height:284px;}
 }
 

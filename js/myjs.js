@@ -38,11 +38,13 @@ $(document).hover(function () {
 
 	if ($(this).scrollTop() > 230 && $(this).width() > 992){  
 	    $('.main-navigation .navbar').addClass("sticky");
-	    $('.logo-main>img').addClass("sticky-logo");
+	    $('.logo-main-sticky>img').addClass("sticky-logo");
+	    $(".logo-main-sticky").css({"display":"block", "width":"100%"});
 	  }
 	  else{
 	    $('.main-navigation .navbar').removeClass("sticky");
-	    $('.logo-main>img').removeClass("sticky-logo");
+	    $('.logo-main-sticky>img').removeClass("sticky-logo");
+	  	$(".logo-main-sticky").css("display","none");
 	  }
 	});
 
