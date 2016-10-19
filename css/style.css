@@ -353,7 +353,9 @@ li.drop-hover:hover{min-height: 33px;}
   #horizontal-bg-second{min-height:376px;}
 }
 
-@media (min-width:1200px){
+@media (min-width:1200px) and (max-width:2200px){
   .vertical-double-copy{height:284px;}
 }
-
+@media (min-width:2200px){
+  .vertical-double-copy{height:280px;}
+}
