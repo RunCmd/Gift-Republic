@@ -24,12 +24,20 @@ $(document).ready(function(){
     	$('#main-image').attr('src', url).css("width", "355px");
 	});
 //To TOP LINK default 
+		$('#top-page').hide();
         $('#top-page').click(function(){
             $("html, body").animate({ scrollTop: 0 }, 1100);
             return false;
         });
 });
-
+  //When distance from top = 250px fade button in/out
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 250) {
+                $('#top-page').fadeIn(300);
+            } else {
+                $('#top-page').fadeOut(300);
+            }
+        });
 $(document).hover(function () {
     $(".drop-caret").hide();
 });
