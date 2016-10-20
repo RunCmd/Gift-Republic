@@ -27,8 +27,10 @@ a:hover{ -webkit-transition: all 1s ease-in-out;
     -webkit-transition: border .2s ease-in-out;
     -moz-transition: border .2s ease-in-out;
 }
-a:focus, a:visited, a:active{}
-a{color:black;}
+.main-body a:focus,.main-body a:visited,.main-body a:active{outline:none;}
+
+a{color:black;outline:none;}
+.main-body span:focus, .main-body span:active{ outline-color: transparent;outline:none;}
 /* Fade In Transition on Reload Images*/
 .fade-in{
   -webkit-animation: fade-in 3s ease;
@@ -186,6 +188,35 @@ li.drop-hover:hover{min-height: 33px;}
 .vertical-double-copy{ padding-top: 15px;width:100%!important;}
 /* ======================== */
 /*====== CAROUSEL ==================== */
+.carousel-fade .carousel-inner .item {
+            transition-property: opacity;
+        }
+        
+        .item,
+        .active.left,
+        .active.right {
+            opacity: 0;
+        }
+
+        .active,
+        .next.left,
+        .prev.right {
+            opacity: 1;
+        }
+
+        .next,
+        .prev,
+        .active.left,
+        .active.right {
+            left: 0;
+            transform: translate3d(0, 0, 0);
+        }
+    }
+
+.carousel-control {
+        z-index: 2;
+    }
+
 .overlay-image {
     position: absolute;
     top: 0;
@@ -235,6 +266,33 @@ li.drop-hover:hover{min-height: 33px;}
 .contain-products{width:100%;margin-left:8%;}
     .show-product img:hover{opacity:0.6;cursor:pointer;}
 /* ========================= */
+/* Modal POP UP */
+.main-modal {border-radius:0px;}
+.main-modal .modal-dialog{width:450px;}
+.main-modal .modal-content{border-radius:0px;background-color:#aadcd5;}
+.main-modal .modal-header, .main-modal .modal-footer{border:0;}
+.main-modal .modal-header{padding-bottom:0px;padding-top: 30px;}
+.main-modal .modal-body{padding-bottom:0px;}
+.main-modal .modal-footer{padding:12px 0px 26px 0px;}
+.main-modal .sell-product{ 
+     margin: auto;
+    text-align: center;
+    max-width: 100%;
+    display: block;}
+    .main-modal .modal-body h4{color:#fff;font-family:"Gothic-bold";font-size:14px;letter-spacing: 2px;padding:12px 0px 0px;}
+.main-modal .modal-footer a{margin-left:30px; float:left;padding:15px 25px;color:#2f302f;font-family:"Gothic-bold";font-size:14px;text-transform:uppercase;}
+.main-modal .modal-footer a:hover{text-decoration:none;}
+.main-modal .btn-white{
+  border-radius:0px;
+      margin-right: 60px;
+    padding: 15px 25px;
+    text-transform: uppercase;background-color:white;color:#88a39e;font-family:"Gothic-bold";}
+.main-modal .close{text-shadow:none;color:white;opacity:1;font-weight:100;position:absolute;right:6%;top:5px;}
+.main-modal .close span{
+    font-family: serif;
+    font-size: 60px;}
+.main-modal .close span:hover{cursor:pointer;}
+/*============================= */
 /* ABOUT US PAGE========================= */
 .about-text p{    line-height: 28px;font-family:"Gothic-regular";}
 .about-us{margin-bottom:55px;}
@@ -293,6 +351,10 @@ li.drop-hover:hover{min-height: 33px;}
   .padd-products .col-md-3 {margin-bottom:35px;}
 }
 @media (max-width: 768px) {
+  /* PoP Up */
+  .main-modal .modal-dialog{width:auto;}
+  .main-modal .modal-footer a{margin-left:0px;}
+  .main-modal .btn-white{margin-right:20px;}
   .background-about{min-height:100%;}
   .dropdown-menu-large > li > ul > li{padding:1px 1px;}
   .main-navigation .navbar-header{
