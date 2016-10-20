@@ -287,7 +287,7 @@ li.drop-hover:hover{min-height: 33px;}
       margin-right: 60px;
     padding: 15px 25px;
     text-transform: uppercase;background-color:white;color:#88a39e;font-family:"Gothic-bold";}
-.main-modal .close{text-shadow:none;color:white;opacity:1;font-weight:100;position:absolute;right:6%;top:5px;}
+.main-modal .close{  z-index: 999;text-shadow:none;color:white;opacity:1;font-weight:100;position:absolute;right:6%;top:5px;}
 .main-modal .close span{
     font-family: serif;
     font-size: 60px;}
