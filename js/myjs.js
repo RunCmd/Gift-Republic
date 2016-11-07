@@ -29,6 +29,18 @@ $(document).ready(function(){
             $("html, body").animate({ scrollTop: 0 }, 1100);
             return false;
         });
+
+
+        //Hover PopUP background
+        $(".drop-hover").mouseenter(function(event) {
+        	event.preventDefault();
+        	$(".add-pop").addClass("fixed-pop");
+        });
+
+        $(".drop-hover").mouseleave(function(event) {
+        	event.preventDefault();
+        	$(".add-pop").removeClass("fixed-pop");
+        });
 });
   //When distance from top = 250px fade button in/out
         $(window).scroll(function(){
